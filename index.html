@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="https://cdn.craftcodery.com/assets/icon_white_fill.png">
+    <link rel="icon" type="image/png" href="https://www.northbuilt.com/favicon.png">
 
-    <title>Craft Codery Email Signature Builder</title>
+    <title>NorthBuilt Email Signature Builder</title>
 
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
     <script>
@@ -15,7 +15,7 @@
                 extend: {
                     colors: {
                         indigo: {
-                            500: '#2bb673'
+                            500: '#134f5b'
                         },
                     }
                 }
@@ -27,7 +27,7 @@
 
     <style>
         body {
-            background: #d6f0d5;
+            background: #134f5b;
         }
     </style>
 </head>
@@ -40,7 +40,7 @@
                 <div class="space-y-8 divide-y divide-gray-200 sm:space-y-5">
                     <div class="space-y-6 sm:space-y-5">
                         <div>
-                            <h3 class="text-lg leading-6 font-medium text-gray-900">Craft Codery Email Signature
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">NorthBuilt Email Signature
                                 Builder</h3>
                         </div>
 
@@ -105,7 +105,7 @@
                                 <p class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"> Email
                                     signature </p>
                                 <iframe :srcdoc="generateEmailSignature($data)"
-                                        class="mt-1 sm:mt-0 sm:col-span-2"></iframe>
+                                        class="mt-1 sm:mt-0 w-full"></iframe>
                             </div>
 
                             <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
@@ -128,15 +128,15 @@
 <script>
     function generateEmailSignature(data) {
         let signature =
-            '<div style="font-family: \'Proxima Nova\', Tahoma, Verdana, Arial, Helvetica, sans-serif">' +
+            '<div style="font-family: Montserrat, \'Proxima Nova\', Tahoma, Verdana, Arial, Helvetica, sans-serif">' +
             '<table style="margin-bottom: 4px">' +
             '<tr>' +
-            '<td style="padding-right: 12px; border-right: 3px solid #2bb673">' +
-            '<p style="font-size: 16px; color: #234b69; font-weight: 600; margin: 4px 0">' + data.name + '</p>' +
+            '<td style="padding-right: 12px; border-right: 3px solid #45818e">' +
+            '<p style="font-size: 16px; color: #134f5b; font-weight: 600; margin: 4px 0">' + data.name + '</p>' +
             '<p style="font-size: 13px; color: #666666; font-weight: 500; margin: 4px 0">' + data.title + '</p>' +
             '</td>' +
-            '<td>' +
-            '<a href="https://craftcodery.com"><img src="https://cdn.craftcodery.com/assets/logo_white_outline_252x72.png" border="0" width="126" height="36" style="width: 126px; height: 36px" alt="Craft Codery"></a>' +
+            '<td style="padding-left: 4px">' +
+            '<a href="https://www.northbuilt.com"><img src="https://cdn.northbuilt.com/assets/northbuilt-logo-white-bg-257x44.png" border="0" width="128" height="22" style="width: 128px; height: 22px; vertical-align: middle" alt="NorthBuilt"></a>' +
             '</td>' +
             '</tr>' +
             '</table>';
@@ -147,11 +147,11 @@
             if (data.phone) {
                 signature +=
                     '<tr>' +
-                    '<td style="color: #2bb673; font-size: 14px; font-weight: bold">' +
+                    '<td style="color: #134f5b; font-size: 14px; font-weight: bold">' +
                     '<span>P:</span>' +
                     '</td>' +
                     '<td>' +
-                    '<a href="tel:+1' + data.phone.replace(/\D/g, '') + '" style="color: #234b69">' + data.phone + '</a>' +
+                    '<a href="tel:+1' + data.phone.replace(/\D/g, '') + '" style="color: #45818e">' + data.phone + '</a>' +
                     '</td>' +
                     '</tr>';
             }
@@ -159,11 +159,11 @@
             if (data.email) {
                 signature +=
                     '<tr>' +
-                    '<td style="color: #2bb673; font-size: 14px; font-weight: bold">' +
+                    '<td style="color: #134f5b; font-size: 14px; font-weight: bold">' +
                     '<span>E:</span>' +
                     '</td>' +
                     '<td>' +
-                    '<a href="mailto:' + data.email + '" style="color: #234b69">' + data.email + '</a>' +
+                    '<a href="mailto:' + data.email + '" style="color: #45818e">' + data.email + '</a>' +
                     '</td>' +
                     '</tr>';
             }
@@ -172,10 +172,10 @@
                 signature +=
                     '<tr>' +
                     '<td>' +
-                    '<img src="https://cdn.craftcodery.com/assets/linkedin_32x32.png" border="0" width="16" height="16" style="width: 16px; height: 16px">' +
+                    '<img src="https://cdn.northbuilt.com/assets/linkedin_32x32.png" border="0" width="16" height="16" style="width: 16px; height: 16px">' +
                     '</td>' +
                     '<td>' +
-                    '<a href="https://www.linkedin.com/in/' + data.linkedin + '" style="color: #234b69">linkedin.com/in/' + data.linkedin + '</a>' +
+                    '<a href="https://www.linkedin.com/in/' + data.linkedin + '" style="color: #45818e">linkedin.com/in/' + data.linkedin + '</a>' +
                     '</td>' +
                     '</tr>';
             }
@@ -184,10 +184,10 @@
                 signature +=
                     '<tr>' +
                     '<td>' +
-                    '<img src="https://cdn.craftcodery.com/assets/github_32x32.png" border="0" width="16" height="16" style="width: 16px; height: 16px">' +
+                    '<img src="https://cdn.northbuilt.com/assets/github_32x32.png" border="0" width="16" height="16" style="width: 16px; height: 16px">' +
                     '</td>' +
                     '<td>' +
-                    '<a href="https://github.com/' + data.github + '" style="color: #234b69">github.com/' + data.github + '</a>' +
+                    '<a href="https://github.com/' + data.github + '" style="color: #45818e">github.com/' + data.github + '</a>' +
                     '</td>' +
                     '</tr>';
             }

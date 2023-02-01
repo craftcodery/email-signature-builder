@@ -32,7 +32,7 @@
     </style>
 </head>
 
-<body x-data="{ name: '', title: '', email: '', phone: '', linkedin: '', github: '' }" class="sm:p-8">
+<body x-data="{ name: '', title: '', phone: '', linkedin: '', github: '' }" class="sm:p-8">
 <div class="container mx-auto sm:px-6 lg:px-8">
     <div class="bg-white overflow-hidden shadow sm:rounded-lg">
         <div class="px-4 py-5 sm:p-6">
@@ -74,14 +74,6 @@
                                 </div>
                             </div>
 
-                            <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                                <label for="email" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
-                                    Email address </label>
-                                <div class="mt-1 sm:mt-0 sm:col-span-2">
-                                    <input id="email" name="email" type="email" autocomplete="email" x-model="email"
-                                           class="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md">
-                                </div>
-                            </div>
 
                             <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
                                 <label for="linkedin" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
@@ -141,7 +133,7 @@
             '</tr>' +
             '</table>';
 
-        if (data.phone || data.email || data.linkedin || data.github) {
+        if (data.phone || data.linkedin || data.github) {
             signature += '<table style="font-size: 13px; border-spacing: 4px">';
 
             if (data.phone) {
@@ -156,17 +148,6 @@
                     '</tr>';
             }
 
-            if (data.email) {
-                signature +=
-                    '<tr>' +
-                    '<td style="color: #134f5b; font-size: 14px; font-weight: bold">' +
-                    '<span>E:</span>' +
-                    '</td>' +
-                    '<td>' +
-                    '<a href="mailto:' + data.email + '" style="color: #45818e">' + data.email + '</a>' +
-                    '</td>' +
-                    '</tr>';
-            }
 
             if (data.linkedin) {
                 signature +=

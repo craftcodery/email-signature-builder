@@ -137,7 +137,7 @@
 
             if (data.phone) {
                 signature +=
-                    '<tr style="line-height: 15px;">' +
+                    '<tr style="vertical-align: center;">' +
                     '<td style="color: #24554f; font-size: 14px; font-weight: bold">' +
                     '<span>P:</span>' +
                     '</td>' +
@@ -150,9 +150,9 @@
 
             if (data.linkedin) {
                 signature +=
-                    '<tr style="line-height: 15px;">' +
+                    '<tr>' +
                     '<td>' +
-                    '<img src="https://cdn.northbuilt.com/assets/linkedin_32x32.png" border="0" width="16" height="16" style="width: 16px; height: 16px">' +
+                    '<img style="vertical-align: middle;" src="https://cdn.northbuilt.com/assets/linkedin_32x32.png" border="0" width="16" height="16" style="width: 16px; height: 16px">' +
                     '</td>' +
                     '<td>' +
                     '<a href="https://www.linkedin.com/in/' + data.linkedin + '" style="color: #24554f">linkedin.com/in/' + data.linkedin + '</a>' +
@@ -162,9 +162,9 @@
 
             if (data.github) {
                 signature +=
-                    '<tr style="line-height: 15px;">' +
+                    '<tr>' +
                     '<td>' +
-                    '<img src="https://cdn.northbuilt.com/assets/github_32x32.png" border="0" width="16" height="16" style="width: 16px; height: 16px">' +
+                    '<img style="vertical-align: middle;" src="https://cdn.northbuilt.com/assets/github_32x32.png" border="0" width="16" height="16" style="width: 16px; height: 16px">' +
                     '</td>' +
                     '<td>' +
                     '<a href="https://github.com/' + data.github + '" style="color: #24554f">github.com/' + data.github + '</a>' +
@@ -175,7 +175,7 @@
             signature += '</table>';
         }
 
-        signature += '<a href="https://www.northbuilt.com"><img src="https://cdn.northbuilt.com/assets/northbuilt-logo-white-bg-257x44.png" border="0" width="128" height="22" style="width: 128px; height: 22px; margin-top: 4px; margin-left:1px; vertical-align: middle" alt="NorthBuilt"></a></div>';
+        signature += '<a href="https://www.northbuilt.com"><img src="https://cdn.northbuilt.com/assets/northbuilt-logo-white-bg-257x44.png" border="0" width="128" height="22" style="width: 128px; height: 22px; margin-top: 6px; margin-left:1px; vertical-align: middle" alt="NorthBuilt"></a></div>';
 
         return signature;
     }
